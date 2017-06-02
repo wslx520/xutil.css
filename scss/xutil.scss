@@ -1,0 +1,89 @@
+// text-align: xxx
+.t-l {text-align: left;}
+.t-c {text-align: center;}
+.t-r {text-align: right;}
+
+// float: xxx;
+.f-l {float: left;}
+.f-r {float: right;}
+.f-n {float: none;}
+
+// width, height
+.w-a {
+    width: auto;
+}
+.h-a {
+    height: auto;
+}
+
+// position: xxx;
+.pos-a {
+    position: absolute;
+}
+.pos-s {
+    position: static;
+}
+.pos-r {
+    position: relative;
+}
+.pos-f {
+    position: fixed;
+}
+
+.fz0 {
+    font-size: 0;
+}
+
+// clear float
+.clearfix{
+    *zoom:1;
+    &:after{display:block;visibility:hidden;clear:both;height:0;content:'.';font-size:0}
+}
+
+// hide
+.hide {display: none !important;}
+
+// vertical align middle in a row
+.v-m:before { content: ''; display: inline-block; height: 100%; width: 0; vertical-align: middle; font-size: 0; }
+.v-m > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+// vertical-align: xxx;
+.va-m {
+    vertical-align: middle;
+}
+.va-t {
+    vertical-align: top;
+}
+.va-b {
+    vertical-align: bottom;
+}
+
+// display: xxx;
+.d-n {
+    display: none;
+}
+.d-b {
+    display: block;
+}
+.d-ib {
+    display: inline-block;
+}
+.d-i {
+    display: inline;
+}
+.d-t {
+    display: table;
+}
+.d-tr {
+    display: table-row;
+}
+.d-tc {
+    display: table-cell;
+}
+
+.d-fl {
+    display: flex;
+}
